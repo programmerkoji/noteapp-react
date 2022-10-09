@@ -16,6 +16,10 @@ function App() {
 		localStorage.setItem("notes", JSON.stringify(notes)); //JSON.stringifyでオブジェクトをJSON形式に変換
 	}, [notes]);
 
+	useEffect(() => {
+		setActiveNote(notes[0].id);
+	}, []);
+
 	const onAddNote = () => {
 		console.log("新しくNoteが追加されました。");
 		const newNote = {
