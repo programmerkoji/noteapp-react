@@ -40,3 +40,6 @@ button {
 	background-color: #dcd4d4;
 	transition: all 0.3s;
 }
+.app-sidebar-note.active {
+	background-color: #dcd4d4;
+}
